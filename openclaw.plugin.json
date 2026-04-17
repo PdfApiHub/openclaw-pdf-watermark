@@ -1,0 +1,24 @@
+{
+  "id": "pdf-watermark",
+  "name": "pdf-watermark",
+  "displayName": "PDF Watermark",
+  "description": "Add watermarks to PDFs and images — text stamps, logo overlays, tiled or single placement, custom styling, and quick presets for CONFIDENTIAL/DRAFT/APPROVED. Powered by PDFAPIHub.",
+  "version": "1.0.0",
+  "author": "PdfApiHub",
+  "homepage": "https://pdfapihub.com",
+  "extensions": ["./index.ts"],
+  "skills": ["./skills"],
+  "compat": {
+    "pluginApi": ">=2026.3.24-beta.2",
+    "minGatewayVersion": "2026.3.24-beta.2"
+  },
+  "configSchema": {
+    "type": "object",
+    "properties": {
+      "apiKey": {
+        "type": "string",
+        "description": "PDFAPIHub API key. Get a free key at https://pdfapihub.com"
+      }
+    }
+  }
+}

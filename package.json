@@ -1,0 +1,39 @@
+{
+  "name": "pdf-watermark",
+  "version": "1.0.0",
+  "description": "Add watermarks to PDFs and images — text stamps (CONFIDENTIAL, DRAFT, APPROVED), logo/image overlays, tiled or single placement, custom color/opacity/angle/font, and position presets. Powered by PDFAPIHub.",
+  "type": "module",
+  "main": "index.ts",
+  "keywords": [
+    "openclaw",
+    "pdf-watermark",
+    "watermark",
+    "document-protection",
+    "copyright",
+    "confidential",
+    "pdf-stamp",
+    "image-watermark",
+    "pdfapihub",
+    "clawhub",
+    "ai-agent"
+  ],
+  "author": "PDFAPIHub <hello@pdfapihub.com>",
+  "license": "MIT",
+  "homepage": "https://pdfapihub.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PdfApiHub/openclaw-pdf-watermark"
+  },
+  "openclaw": {
+    "extensions": ["./index.ts"],
+    "skills": ["./skills"],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2",
+      "pluginSdkVersion": "2026.3.24-beta.2"
+    }
+  }
+}
