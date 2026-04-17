@@ -32,7 +32,7 @@ Protect and mark your documents with text or image watermarks — tiled across e
 ## Installation
 
 ```bash
-openclaw plugins install clawhub:pdfapihub-watermark
+openclaw plugins install clawhub:pdf-add-watermark
 ```
 
 ## Configuration
@@ -43,7 +43,7 @@ Add your API key in `~/.openclaw/openclaw.json`:
 {
   "plugins": {
     "entries": {
-      "pdfapihub-watermark": {
+      "pdf-add-watermark": {
         "enabled": true,
         "env": {
           "PDFAPIHUB_API_KEY": "your-api-key-here"

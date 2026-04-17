@@ -1,6 +1,6 @@
 {
-  "id": "pdfapihub-watermark",
-  "name": "pdfapihub-watermark",
+  "id": "pdf-add-watermark",
+  "name": "pdf-add-watermark",
   "displayName": "PDF Watermark",
   "description": "Add watermarks to PDFs and images — text stamps, logo overlays, tiled or single placement, custom styling, and quick presets for CONFIDENTIAL/DRAFT/APPROVED. Powered by PDFAPIHub.",
   "version": "1.0.0",
