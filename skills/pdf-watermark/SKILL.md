@@ -40,6 +40,8 @@ Configure in `~/.openclaw/openclaw.json`:
 
 Or set the environment variable in config: `"env": { "PDFAPIHUB_API_KEY": "your-key" }`
 
+**Privacy note:** Files you process are uploaded to PDFAPIHub's cloud service. Files are auto-deleted after 30 days.
+
 ## Usage Examples
 
 **Mark a document as confidential:**
