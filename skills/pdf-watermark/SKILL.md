@@ -21,13 +21,30 @@ Add text or image watermarks to PDFs and images with full control over styling, 
 
 Get your **free API key** at [https://pdfapihub.com](https://pdfapihub.com).
 
-Configure in `~/.openclaw/openclaw.json`:
+**Privacy note:** Files you process are uploaded to PDFAPIHub's cloud service for watermarking. Files are auto-deleted after 30 days.
+
+Configure your API key in `~/.openclaw/openclaw.json`:
 
 ```json
 {
   "plugins": {
     "entries": {
-      "pdf-watermark": {
+      "pdf-add-watermark": {
+        "enabled": true,
+        "apiKey": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+Or use the `env` approach (OpenClaw injects it into `config.apiKey` automatically):
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "pdf-add-watermark": {
         "enabled": true,
         "env": {
           "PDFAPIHUB_API_KEY": "your-api-key-here"
@@ -37,10 +54,6 @@ Configure in `~/.openclaw/openclaw.json`:
   }
 }
 ```
-
-Or set the environment variable in config: `"env": { "PDFAPIHUB_API_KEY": "your-key" }`
-
-**Privacy note:** Files you process are uploaded to PDFAPIHub's cloud service. Files are auto-deleted after 30 days.
 
 ## Usage Examples
 

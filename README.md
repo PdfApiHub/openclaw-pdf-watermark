@@ -37,7 +37,22 @@ openclaw plugins install clawhub:pdf-add-watermark
 
 ## Configuration
 
-Add your API key in `~/.openclaw/openclaw.json`:
+**Privacy note:** Files you process are uploaded to PDFAPIHub's cloud service for watermarking. Files are auto-deleted after 30 days.
+
+```json
+{
+  "plugins": {
+    "entries": {
+      "pdf-add-watermark": {
+        "enabled": true,
+        "apiKey": "your-api-key-here"
+      }
+    }
+  }
+}
+```
+
+Or use the `env` approach:
 
 ```json
 {
